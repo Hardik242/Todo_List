@@ -213,12 +213,12 @@ body {
 }
 
 .note ol li h2 {
-      font-size: 2.3rem;
+      font-size: 1.5rem;
       margin-bottom: 5px;
 }
 
 .note ol li span {
-      font-size: 1.5rem;
+      font-size: 2.3rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -255,10 +255,10 @@ body {
       }
 
       .note ol li h2 {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
       }
 
       .note ol li span {
-            font-size: 1.3rem;
+            font-size: 1.8rem;
       }
 }
