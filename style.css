@@ -1,0 +1,264 @@
+:root {
+      --primary-color: #ffffff44;
+      --secondary-color: #ffffff83;
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: 'Lato', sans-serif;
+      background-color: #4158D0;
+      /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+      background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+      min-height: 100vh;
+
+}
+
+.container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+}
+
+.container h1 {
+      color: white;
+      margin: 20px;
+      font-size: 4.5rem;
+}
+
+.container form {
+      width: 70%;
+      background-color: var(--primary-color);
+      padding: 20px 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      display: flex;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.5);
+}
+
+.warning {
+      margin: 5px 0px;
+      width: 100%;
+      font-size: 0.9rem;
+}
+
+.container form input {
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.250);
+      background-color: var(--secondary-color);
+      min-width: 220px;
+      flex-grow: 1;
+      border: none;
+      border-radius: 12px;
+      outline: none;
+      padding: 15px 10px;
+      font-size: 1.5rem;
+      margin: 10px 0px;
+      margin-right: 7px;
+}
+
+.container form button {
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.122);
+      background-color: #322f2f;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      height: 50px;
+      padding: 30px 40px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+}
+
+.container1 {
+      width: 70%;
+      background-color: var(--primary-color);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0px;
+}
+
+.showItems {
+      margin: 8px 0px;
+      margin-right: 5px;
+}
+
+.showItems button {
+      padding: 15px 30px;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.122);
+      background-color: #322f2f;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+}
+
+.not-available {
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+      text-align: center;
+}
+
+.noteContainer {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-right: 5px;
+      word-wrap: break-word;
+      box-sizing: border-box;
+}
+
+.noteContainer {
+      word-break: break-word;
+}
+
+.deleteItemContainerdiv {
+      display: flex;
+      justify-content: center;
+      min-width: 57px;
+      min-height: 57px;
+}
+
+.deleteItemContainer {
+      display: flex;
+      border: none;
+      max-height: 55px;
+      max-width: 55px;
+      cursor: pointer;
+      box-sizing: border-box;
+      padding: 7px;
+      border-radius: 10px;
+      background-color: #e7e7e789;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.485);
+}
+
+.delete {
+      width: 100%;
+      height: 100%;
+}
+
+.deleteItemContainer:hover {
+      transform: scale(1.1);
+      transition: 0.1s;
+}
+
+.removeNotes {
+      margin: 8px 0px;
+}
+
+.removeNotes button {
+      padding: 15px 30px;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.122);
+      background-color: #322f2f;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+}
+
+.note {
+      display: flex;
+      align-self: center;
+      width: 95%;
+}
+
+.note ol {
+      margin: 15px 0 20px 0;
+      list-style: none;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+}
+
+.note ol li {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      align-items: center;
+      padding: 10px 20px;
+      margin-bottom: 13px;
+      border-radius: 10px;
+      background-color: var(--secondary-color);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.384);
+      word-wrap: break-word;
+}
+
+.note ol li h2 {
+      font-size: 2.3rem;
+      margin-bottom: 5px;
+}
+
+.note ol li span {
+      font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+      .container h1 {
+            font-size: 3rem;
+      }
+
+      .container form {
+            width: 90%;
+            padding: 10px 15px;
+            font-size: 1.3rem;
+      }
+
+      .container form input {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+      }
+
+      .container form button {
+            font-size: 1.3rem;
+            padding: 30px 50px;
+      }
+
+      .container1 {
+            width: 90%;
+      }
+
+      .showItems button {
+            font-size: 1.3rem;
+      }
+
+      .removeNotes button {
+            font-size: 1.3rem;
+      }
+
+      .note ol li h2 {
+            font-size: 1.8rem;
+      }
+
+      .note ol li span {
+            font-size: 1.3rem;
+      }
+}
