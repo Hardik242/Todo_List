@@ -10,10 +10,18 @@ form.onsubmit = (event) => {
     event.preventDefault();
     let warningNote = `<div class="warning"><p class="warning">* Please fill in Note field</p></div>`;
     let formValid = validateForm(description.value);
+
     if (formValid == false) {
         if (document.querySelector(".warning") === null) {
             form.insertAdjacentHTML("afterbegin", warningNote);
         }
+    } else {
+        document.querySelector(".notification").classList.add("notiShow");
+        setTimeout(() => {
+            document
+                .querySelector(".notification")
+                .classList.remove("notiShow");
+        }, 6500);
     }
 
     // Remove the warning message
