@@ -4,7 +4,7 @@ let description = form.elements.inputDescription;
 let notes = document.querySelector(".notes ol");
 let notesClass = document.querySelector(".notes");
 let count;
-
+let messageCounter = 0;
 // Add note
 form.onsubmit = (event) => {
   event.preventDefault();
@@ -67,10 +67,13 @@ const getFromStorage = () => {
 </div>`;
   if (Object.keys(localStorage).length === 0) {
     notes.innerHTML = notAvailable;
+    messageCounter = 1;
   } else {
-    if (notes.hasChildNodes(notAvailable)) {
+    if (messageCounter === 1) {
       document.querySelector(".not-available").remove();
+      messageCounter = 0;
     }
+
     let keys = Object.keys(localStorage).filter((key) => key !== "count");
     keys = keys.sort();
     let counter = 0;
@@ -80,19 +83,19 @@ const getFromStorage = () => {
         return;
       }
       let value = localStorage.getItem(key);
-      Items[counter] = `<li>
-    <div class="noteContainer">
-    <h2>${key}</h2>
-    <span>${value}</span>
-    </div>
-    <div class="deleteItemContainerdiv">
-    <button type="button" id="deleteItem${counter}" class="deleteItemContainer">
-    <img src="delete.png" alt="Remove" class="delete">
-    </button>
-    </div>
-    </li>`;
+
       if (!notes.innerHTML.includes(key)) {
-        notes.innerHTML += Items[counter];
+        notes.innerHTML += `<li>
+        <div class="noteContainer">
+        <h2>${key}</h2>
+        <span>${value}</span>
+        </div>
+        <div class="deleteItemContainerdiv">
+        <button type="button" id="deleteItem${counter}" class="deleteItemContainer">
+        <img src="delete.png" alt="Remove" class="delete">
+        </button>
+        </div>
+        </li>`;
       }
       counter++;
       // Delete item
