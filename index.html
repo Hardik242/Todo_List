@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo List</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="icons8-todo-list-64.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <h1>To-Do List</h1>
-      <form name="myForm">
-        <input
-          type="text"
-          name="inputHeading"
-          placeholder="Heading(optional)"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo List</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
         />
-        <input type="text" name="inputDescription" placeholder="Task" />
-        <br />
-        <button type="submit">
-          Add Item <span class="material-symbols-outlined"> add_box </span>
-        </button>
-      </form>
-      <div class="container1">
-        <div class="buttons">
-          <div class="showItems">
-            <button type="button" id="showItems">Show Items</button>
-          </div>
-          <div class="removeNotes">
-            <button type="button" id="removeNotes">Remove Notes</button>
-          </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="shortcut icon"
+            href="icons8-todo-list-64.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do List</h1>
+            <form name="myForm">
+                <input type="text" name="inputDescription" placeholder="Task" />
+                <br />
+                <button type="submit">
+                    Task&nbsp;<span class="material-symbols-outlined">
+                        add_box
+                    </span>
+                </button>
+            </form>
+            <div class="container1">
+                <div class="buttons">
+                    <div class="showItems">
+                        <button type="button" id="showItems">Show Tasks</button>
+                    </div>
+                    <div class="removeNotes">
+                        <button type="button" id="removeNotes">
+                            Remove all Tasks
+                        </button>
+                    </div>
+                </div>
+                <div class="notes">
+                    <ol></ol>
+                </div>
+            </div>
         </div>
-        <div class="notes">
-          <ol></ol>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+        <script src="script.js"></script>
+    </body>
 </html>

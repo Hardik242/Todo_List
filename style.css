@@ -78,7 +78,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-grow: 1;
+      flex-grow: 0;
 }
 
 .container1 {
@@ -100,7 +100,7 @@ body {
 
 .showItems {
       margin: 8px 0px;
-      margin-right: 5px;
+      margin-right: 15px;
 }
 
 .showItems button {
