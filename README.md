@@ -13,6 +13,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/www.linkedin.com/in/hardik-goel-582053250" target="blank">LinkedIn Profile&nbsp;&nbsp; </a>
+<a href="https://linkedin.com/in/www.linkedin.com/in/hardik-goel-582053250" target="blank">LinkedIn Profile</a>
+  &nbsp;&nbsp; 
 <a href="https://instagram.com/https://www.instagram.com/goel_hardik242/" target="blank">Instagram Profile</a>
 </p>
