@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Harsh Rastogi</h1>
+<h1 align="center">Hi 👋, I'm Hardik Goel</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
 
 - 🔭 I’m currently working on [To-Do List website](https://hardik242.github.io/Todo_List/)
